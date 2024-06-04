@@ -1,0 +1,123 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --white: #fafafb;
+    --purple: hsl(263, 76%, 66%);
+    --blue-ligth: #04d4c3;
+    --ble-dark: #2a73c2;
+    --green: #2c7b98;
+}
+
+body{
+    background: linear-gradient(to bottom,var(--purple), var(--blue-ligth));
+    height: 100vh;
+    font-family: "Prompt", sans-serif;
+}
+
+.perfil h1{
+    color: var(--white)
+}
+
+.perfil span{
+    color: var(--white);
+    letter-spacing: 1px;
+
+}
+
+#fecha{
+    color: var(--white);
+    padding: 50px 0 5px 0;
+}
+
+.agrTar{
+    background-color: var(--white);
+    border-radius: 15px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    gap:70px;
+    margin: 40px 0px;
+}
+
+.agrTar input{
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    border: none;
+    background-color: var(--white);
+
+}
+.agrTar input:focus{
+    outline: none;
+}
+
+.agrTar .i{
+    width: 50px;
+    background-color: #fafafb;
+}
+
+.contenedor{
+    width: 400px;
+    height: 100vh;
+    margin: 0 auto;
+    max-width: 80%;
+}
+
+.agrTar .i:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.agrTar input::placeholder{
+    font-size: 1.1rem;
+    color: var(--purple);
+}
+
+/*seccion tarea*/
+
+.seccTar h3{
+    color: var(--white);
+    margin-bottom: 20px;
+}
+
+.seccTar li{
+    display: flex;
+    background: linear-gradient(to bottom, var(--ble-dark), var(--green));
+    border-radius: 15px;
+    padding: 10px;
+    align-items: center;
+    justify-content: space-between;
+    margin: 5px 0px;
+    color: var(--white);
+}
+
+.seccTar .i{
+    width: 25px;
+}
+
+.seccTar .i:hover{
+   /* color: var(--blue-ligth);  */
+    cursor: pointer;
+}
+
+.seccTar > ul p{
+    font-size: 1.2rem;
+}
+
+.tachado{
+    text-decoration: line-through;
+    color: var(--blue-ligth);
+}
+
+#circulo{
+    width: 25px;
+}
+
+#circulo:hover{
+    cursor: pointer;
+}
